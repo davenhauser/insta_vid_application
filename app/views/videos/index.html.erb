@@ -1,0 +1,9 @@
+ <main>
+  <% @videos.each do |video| %>
+    <article>
+      <h4><%= link_to video.title, video.video_link %></h4>
+      <iframe class="video-embed" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
+    </article>
+  <% end %>
+</main>
+

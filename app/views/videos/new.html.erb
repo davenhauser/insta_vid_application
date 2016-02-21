@@ -1,0 +1,25 @@
+<%= form_for @video do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :tags %>
+  <%= f.text_field :tags %>
+  <br>
+  <%= f.label :video_link %>
+  <%= f.text_field :video_link %>
+  <br>
+  <%= f.label :filmed_when, "Is this the text diplayed?" %>
+  <%= f.date_select :filmed_when, order: [:month, :day, :year] %>
+  <br>
+  <%= f.label :filmed_where %>
+  <%= f.text_field :filmed_where %>
+  <br>
+  <%= f.submit "Upload Video!" %>
+<% end %>
+
+<ul>
+<% @video.errors.full_messages.each do |message| %>
+  <li><%= message %></li>
+<% end %>
+</ul>

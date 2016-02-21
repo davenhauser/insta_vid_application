@@ -1,0 +1,36 @@
+body {
+   font-size: 14px;
+ }
+
+ h1,
+ h3 {
+  font-family: helvetica;
+   color: silver;
+   text-align: center;
+ }
+
+ h1 {
+   font-style: bold;
+ }
+
+ article {
+   border: 3px dotted silver;
+   padding: 2rem;
+ }
+
+  .video-embed {
+   display: block;
+   margin: 0 auto;
+ }
+
+ nav {
+   text-align: center;
+ }
+
+ .field_with_errors {
+   display: inline;
+ }
+
+ .field_with_errors input {
+   border: 2px solid red;
+ }

@@ -13,6 +13,6 @@ and be logged in.
 
 All user stories can be found under this [Trello link](https://trello.com/b/ghQIs91q/instavid)
 
-[_] Explanations of the technologies used.
-[_] Installation/startup instructions.
-[_] Unsolved problems, etc.
+[ ] Explanations of the technologies used.
+[ ] Installation/startup instructions.
+[ ] Unsolved problems, etc.

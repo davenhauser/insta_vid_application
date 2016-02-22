@@ -22,6 +22,26 @@ def create
     end
 end
 
+def edit
+  @video = Video.find(params[:id])
+end
+
+def update
+  @video = Video.find(params[:id])
+  if @video.update(self.video_params)
+    redirect_to  videos_path
+  else
+    render :edit
+  end
+ end
+
+ def destroy
+  @video = Video.find(params[:id])
+  @video = @video.destroy
+
+  flash[:message] = "'#{@video.title}' removed!"
+  redirect_to videos_path
+ end
   def video_params
     params.require(:video).permit(:title, :tags, :video_link, :filmed_when, :filmed_where)
   end

@@ -12,7 +12,7 @@ Video.delete_all
 Video.create(
   title: "Some Video",
   tags: "video1",
-  video_link: "sdfsfsd",
+  video_link: "GeZ_gq7DdsY",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )

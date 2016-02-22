@@ -1,6 +1,6 @@
  <main>
   <% @videos.each do |video| %>
-    <article>
+<article>
       <h4><%= link_to video.title, video.youtube_link %></h4>
       <iframe src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
       <br>

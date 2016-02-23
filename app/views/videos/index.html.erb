@@ -1,7 +1,7 @@
  <main>
   <% @videos.each do |video| %>
 <article>
-      <h4><%= link_to video.title, video.youtube_link %></h4>
+      <h4><%= link_to video.title, video %></h4>
       <iframe src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
       <br>
       <span><%= video.tags %></span> &nbsp; | &nbsp;
@@ -11,9 +11,11 @@
    <div class = "controls">
      <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;
      <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
-     data: {confirm: "Are you sure you want to delete this video?"} %> </span>
+     data: {confirm: "Are you sure you want to delete this video?"} %> </span> &nbsp; | &nbsp;
+     <span><%=link_to "Comment this video", new_video_comment_path(video)%></span>
    </div>
     </article>
   <% end %>
+
 </main>
 

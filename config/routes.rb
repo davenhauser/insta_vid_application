@@ -2,10 +2,15 @@ Rails.application.routes.draw do
 
   root "videos#index"
 
+
   resources :users, only: [:new, :create]
+
   resources :sessions, only: [:new, :create, :destroy]
-  resources :videos
-  resources :comments
+  resources :videos do
+    resources :comments
+  end
+
+
 
   get "/login", to: "sessions#new"
 

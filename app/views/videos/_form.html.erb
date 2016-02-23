@@ -1,35 +1,16 @@
-<%= form_for @video do |f| %>
+<div class="form-container">
 
-  <div class = "field">
-  <%= f.label :title %>
+<%= bootstrap_form_for @video do |f| %>
+
+
   <%= f.text_field :title %>
-  </div>
-  <br>
-  <div class= "field">
-  <%= f.label :tags %>
   <%= f.text_field :tags %>
-  </div>
-  <br>
-  <div class= "field">
-  <%= f.label :video_link %>
-  <%= f.text_field :video_link %>
-  </div>
-  <br>
-  <div class= "field">
-  <%= f.label :filmed_when, "Is this the text diplayed?" %>
+  <%= f.text_field :video_link, label: "Youtube ID" %>
   <%= f.date_select :filmed_when, order: [:month, :day, :year] %>
-  </div>
-  <br>
-  <div class= "field">
-  <%= f.label :filmed_where %>
   <%= f.text_field :filmed_where %>
-  </div>
-  <br>
-
-  <div class = "actions">
   <%= f.submit "Submit" %>
-   </div>
 <% end %>
+</div>
 
 <ul>
 <% @video.errors.full_messages.each do |message| %>

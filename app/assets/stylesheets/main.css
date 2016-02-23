@@ -14,11 +14,6 @@ body {
    font-style: bold;
  }
 
- article {
-   border: 3px dotted silver;
-   padding: 2rem;
- }
-
   .video-embed {
    display: block;
    margin: 0 auto;
@@ -41,4 +36,26 @@ body {
   max-width: 900px;
   min-width: 480px;
   margin: 0 auto;
+}
+
+.video_show {
+  background-color: azure;
+  text-align: center;
+}
+
+.video_span {
+  font-size: 20px;
+  color: silver;
+}
+
+.video_index{
+  text-align: center;
+  border: 3px dotted none;
+  padding: 3rem;
+  background-color: FloralWhite;
+}
+
+.nav .nav-pills .nav-justified {
+  text-align: right;
+  padding-right: 50px;
 }

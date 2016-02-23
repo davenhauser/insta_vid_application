@@ -19,22 +19,31 @@
   <%= link_to "Add Video", new_video_path %>
  </nav>
 
-<p>
- <p>
-  <% if current_user %>
-    Welcome, <%= current_user.username %>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%= link_to 'Logout', session_path('dummy'), method: :delete %>
-  <% else %>
-    <%= link_to 'Login', login_path %>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%= link_to 'Sign Up', new_user_path %>
-  <% end %>
-   &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%=link_to "Home", videos_path%>
+ <ul class = "nav nav-pills nav-justified">
 
-</p>
-</p>
+  <li>
+  <% if current_user %>
+  Welcome, <%= current_user.username %>
+  </li>
+
+  <li>
+    <%= link_to 'Log Out', session_path('dummy'), method: :delete %>
+  </li>
+
+  <li>
+  <% else %>
+  <%= link_to 'Log In', login_path %>
+  </li>
+
+  <li>
+  <%= link_to 'Sign Up', new_user_path %>
+  </li>
+  <% end %>
+  <li>
+    <%=link_to "Home", videos_path%>
+  </li>
+</ul>
+
 
 <%= yield %>
 

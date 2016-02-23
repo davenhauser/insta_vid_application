@@ -1,12 +1,12 @@
  <main>
-  <% @videos.each do |video| %>
-<article>
-      <h4><%= link_to video.title, video %></h4>
+  <% @videos.order(created_at: :desc).each do |video| %>
+<article class="video_index">
+      <h4><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></h4>
       <iframe src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
       <br>
       <span><%= video.tags %></span> &nbsp; | &nbsp;
-      <span><%= video.filmed_when%></span> &nbsp; | &nbsp;
-      <span><%= video.filmed_where%></span>
+      <span><%= video.filmed_when%></span>
+
 
    <div class = "controls">
      <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;

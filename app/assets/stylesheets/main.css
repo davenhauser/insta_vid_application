@@ -48,13 +48,6 @@ body {
   color: silver;
 }
 
-.video_index{
-  text-align: center;
-  border: 3px dotted none;
-  padding: 3rem;
-  background-color: FloralWhite;
-}
-
 .nav .nav-pills .nav-justified {
   text-align: right;
   padding-right: 50px;

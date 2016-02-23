@@ -12,4 +12,10 @@ class Video < ActiveRecord::Base
    def embed_link
      "https://www.youtube.com/embed/#{self.video_link}"
    end
+
+  def self.iterate_every(step, starting=0)
+   every = all
+   total = every.length - 1
+   (starting..total).step(step) { |i| yield every[i] }
+ end
 end

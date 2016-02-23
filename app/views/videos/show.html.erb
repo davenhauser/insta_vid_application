@@ -2,7 +2,7 @@
 
 <article class= "video_show">
       <h4><%= link_to "Play in YouTube", @video.youtube_link %></h4>
-      <iframe src="<%= @video.embed_link %>" frameborder="0" allowfullscreen></iframe>
+      <iframe width="680" height="420" src="<%= @video.embed_link %>" frameborder="0" allowfullscreen></iframe>
       <br>
       <span class= "video_span"><%= @video.tags %></span> &nbsp; | &nbsp;
       <span class= "video_span"><%= @video.filmed_when%></span> &nbsp; | &nbsp;

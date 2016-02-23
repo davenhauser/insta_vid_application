@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'cool';
+  src: font-url('Cool.otf');
+  src: font-url('Cool.otf') format('opentype');
+}
+
+h1 {
+  font-family: 'cool', Fallback, sans-serif;
+  font-spacing: .3rem;
+  font-size: 5rem;
+}

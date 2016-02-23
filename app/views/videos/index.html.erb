@@ -8,10 +8,12 @@
       <span><%= video.tags %></span> &nbsp; | &nbsp;
       <span><%= video.filmed_when%></span>
   <div class = "controls">
+    <% if current_user %>
      <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;
      <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
      data: {confirm: "Are you sure you want to delete this video?"} %> </span> &nbsp; | &nbsp;
-     <span><%=link_to "Comment this video", new_video_comment_path(video)%></span>
+     <span><%=link_to "Comment this video", video_path(video)%></span>
+    <% end %>
    </div>
       <% end %>
 </div>
@@ -24,10 +26,12 @@
       <span><%= video.tags %></span> &nbsp; | &nbsp;
       <span><%= video.filmed_when%></span>
   <div class = "controls">
+    <% if current_user %>
      <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;
      <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
      data: {confirm: "Are you sure you want to delete this video?"} %> </span> &nbsp; | &nbsp;
-     <span><%=link_to "Comment this video", new_video_comment_path(video)%></span>
+     <span><%=link_to "Comment this video", video_path(video)%></span>
+    <% end %>
    </div>
       <% end %>
 </div>
@@ -40,10 +44,12 @@
       <span><%= video.tags %></span> &nbsp; | &nbsp;
       <span><%= video.filmed_when%></span>
   <div class = "controls">
+    <% if current_user %>
      <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;
      <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
      data: {confirm: "Are you sure you want to delete this video?"} %> </span> &nbsp; | &nbsp;
-     <span><%=link_to "Comment this video", new_video_comment_path(video)%></span>
+     <span><%=link_to "Comment this video", video_path(video)%></span>
+    <% end %>
    </div>
       <% end %>
 </div>

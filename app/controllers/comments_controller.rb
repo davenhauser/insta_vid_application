@@ -1,18 +1,31 @@
 class CommentsController < ApplicationController
 
   def index
-      if params[:video_id]
-     @video = Video.find(params[:video_id])
-     @comments = @video.comments
+    if params[:video_id]
+      @video = Video.find(params[:video_id])
+      @comments = @video.comments
     else
       comments = Comment.all
+    end
   end
-end
 
 def new
   @video = Video.find(params[:video_id])
   @comment = Comment.new
 end
+
+def edit
+  @comment = Comment.find(params[:id])
+end
+
+def update
+  @comment = Comment.find(params[:id])
+  if @comment.update(comment_params)
+    redirect_to  video_path(@comment.video)
+  else
+    render :edit
+  end
+ end
 
 
 def create
@@ -28,7 +41,8 @@ def create
 end
 
 
-def comment_params
+  def comment_params
     params.require(:comment).permit(:message)
   end
+
 end

@@ -19,6 +19,9 @@
           <p><%= comment.message %></p>
           <p><strong>Author: </strong><%= comment.author.username %></p>
         </div>
+        <% if comment.author == current_user %>
+          <%= link_to "Edit", edit_video_comment_path(@video, comment) %>
+        <% end %>
       <% end %>
 
 

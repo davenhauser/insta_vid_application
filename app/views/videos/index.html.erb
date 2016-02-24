@@ -16,6 +16,12 @@
   <% end %>
   </ul>
 
+
+<% @videos.each do |video| %>
+ <%= video.videoupload %>
+
+ <%end%>
+
 <div class="col-sm-6 col-md-4 video-container">
       <% @videos.iterate_every(3) do |video| %>
       <div class="simple">
@@ -24,6 +30,7 @@
         <br>
       <span><%= video.tags %></span> &nbsp; | &nbsp;
       <span><%= video.filmed_when%></span>
+
   <div class = "controls">
     <% if current_user %>
      <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;

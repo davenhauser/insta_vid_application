@@ -17,17 +17,18 @@
   </ul>
 
 
-<% @videos.each do |video| %>
- <%= video.videoupload %>
 
- <%end%>
+
 
 <div class="col-sm-6 col-md-4 video-container">
       <% @videos.iterate_every(3) do |video| %>
       <div class="simple">
       <p><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></p>
+      <p> <%= image_tag video.videoupload.url(:medium) %> </p>
+      <br>
       <iframe width="340" height="210" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
-        <br>
+      <br>
+
       <span><%= video.tags %></span> &nbsp; | &nbsp;
       <span><%= video.filmed_when%></span>
 

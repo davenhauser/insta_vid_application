@@ -1,11 +1,6 @@
-<%= form_for [@video, @comment] do |f| %>
+<%= bootstrap_form_for [@video, @comment] do |f| %>
 
-  <div class = "field">
-  <%= f.label :comment %>
   <%= f.text_area :message %>
-  </div>
-
-   <div class = "actions">
   <%= f.submit "Submit" %>
-   </div>
+
 <%end%>

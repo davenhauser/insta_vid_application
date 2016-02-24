@@ -14,7 +14,7 @@ class UsersController < ApplicationController
       flash[:alert] = "You have successfully signed up!"
       redirect_to root_path
     else
-      render new
+      render :new
     end
   end
 

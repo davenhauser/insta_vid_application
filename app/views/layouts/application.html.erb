@@ -13,39 +13,28 @@
 
 <header>
   <h1>InstaVid</h1>
-  <h3>Short Videos</h3>
  </header>
 
  <nav>
   <%if current_user%>
-  <%= link_to "Add Video", new_video_path %>
+  <%= link_to "Add Video", new_video_path %> &nbsp;|&nbsp;
   <%= link_to "Your Videos", user_path(current_user) %>
   <% end %>
  </nav>
 
  <ul class = "nav nav-pills nav-justified">
 
-  <li>
-  <% if current_user %>
-  Welcome, <%= current_user.username %>
+ <li>
+    <% if current_user %>
+    <%=link_to "Home", videos_path%>
   </li>
 
   <li>
     <%= link_to 'Log Out', session_path('dummy'), method: :delete %>
   </li>
 
-  <li>
-  <% else %>
-  <%= link_to 'Log In', login_path %>
-  </li>
-
-  <li>
-  <%= link_to 'Sign Up', new_user_path %>
-  </li>
   <% end %>
-  <li>
-    <%=link_to "Home", videos_path%>
-  </li>
+
 </ul>
 
 

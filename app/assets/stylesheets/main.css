@@ -3,20 +3,18 @@ background-color: none;
 }
 
 body {
-   font-size: 14px;
+font-family: reis;
+font-size: 20px;
 background-color: MintCream;
  }
 
- h1,
- h3 {
-  font-family: helvetica;
+ h1{
+  font-family: cool;
    color: black;
    text-align: center;
- }
-
- h1 {
    font-style: bold;
  }
+
 
   .video-embed {
    display: block;
@@ -24,6 +22,9 @@ background-color: MintCream;
  }
 
  nav {
+  font-family: reis;
+  font-size: 25px;
+   color: black;
    text-align: center;
  }
 

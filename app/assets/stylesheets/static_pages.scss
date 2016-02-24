@@ -1,11 +1,24 @@
 @font-face {
   font-family: 'cool';
-  src: font-url('Cool.otf');
-  src: font-url('Cool.otf') format('opentype');
+  src: font-url('cool.otf');
+  src: font-url('cool.otf') format('opentype');
 }
 
 h1 {
   font-family: 'cool', Fallback, sans-serif;
+  font-spacing: .3rem;
+  font-size: 5rem;
+}
+
+
+@font-face {
+  font-family: 'reis';
+  src: font-url('reis.otf');
+  src: font-url('reis.otf') format('opentype');
+}
+
+h3{
+  font-family: 'reis', Fallback, sans-serif;
   font-spacing: .3rem;
   font-size: 5rem;
 }

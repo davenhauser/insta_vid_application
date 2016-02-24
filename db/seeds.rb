@@ -16,3 +16,68 @@ Video.create(
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )
+
+Video.create(
+  title: "Some Video",
+  tags: "video1",
+  video_link: "onQLAEEeta8",
+  filmed_when: Date.parse("15-02-2014"),
+  filmed_where: "New York"
+  )
+
+Video.create(
+  title: "Some Video",
+  tags: "video1",
+  video_link: "XfzpYcwiUrA",
+  filmed_when: Date.parse("15-02-2014"),
+  filmed_where: "New York"
+  )
+
+Video.create(
+  title: "Some Video",
+  tags: "video1",
+  video_link: "W3MaEAhXESs",
+  filmed_when: Date.parse("15-02-2014"),
+  filmed_where: "New York"
+  )
+
+Video.create(
+  title: "Some Video",
+  tags: "video1",
+  video_link: "Y-8cvt3y-NM",
+  filmed_when: Date.parse("15-02-2014"),
+  filmed_where: "New York"
+  )
+
+Video.create(
+  title: "Some Video",
+  tags: "video1",
+  video_link: "C_oACPWGvM4",
+  filmed_when: Date.parse("15-02-2014"),
+  filmed_where: "New York"
+  )
+
+Video.create(
+  title: "Some Video",
+  tags: "video1",
+  video_link: "F6j49uzPugA",
+  filmed_when: Date.parse("15-02-2014"),
+  filmed_where: "New York"
+  )
+
+Video.create(
+  title: "Some Video",
+  tags: "video1",
+  video_link: "9HUV5a7MgS4",
+  filmed_when: Date.parse("15-02-2014"),
+  filmed_where: "New York"
+  )
+
+Video.create(
+  title: "Some Video",
+  tags: "video1",
+  video_link: "KMQQqa21ZVs",
+  filmed_when: Date.parse("15-02-2014"),
+  filmed_where: "New York"
+  )
+

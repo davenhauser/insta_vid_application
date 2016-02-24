@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160224174358) do
+ActiveRecord::Schema.define(version: 20160224223753) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,9 +19,13 @@ ActiveRecord::Schema.define(version: 20160224174358) do
   create_table "comments", force: :cascade do |t|
     t.text     "message"
     t.integer  "video_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.integer  "author_id"
+    t.string   "videoupload_file_name"
+    t.string   "videoupload_content_type"
+    t.integer  "videoupload_file_size"
+    t.datetime "videoupload_updated_at"
   end
 
   create_table "users", force: :cascade do |t|
@@ -29,8 +33,12 @@ ActiveRecord::Schema.define(version: 20160224174358) do
     t.string   "email"
     t.string   "profile_img_url"
     t.string   "password_digest"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "videoupload_file_name"
+    t.string   "videoupload_content_type"
+    t.integer  "videoupload_file_size"
+    t.datetime "videoupload_updated_at"
   end
 
   create_table "videos", force: :cascade do |t|

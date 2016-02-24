@@ -44,6 +44,6 @@ def update
   redirect_to videos_path
  end
   def video_params
-    params.require(:video).permit(:title, :tags, :video_link, :filmed_when, :filmed_where, :videoupload)
+    params.require(:video).permit(:title, :tags, :video_link, :filmed_when, :filmed_where)
   end
 end

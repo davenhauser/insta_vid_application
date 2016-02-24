@@ -3,7 +3,6 @@
 <article class= "simple">
       <h4><%= link_to "Play in YouTube", @video.youtube_link %></h4>
       <iframe id="videoPlayer" width="680" height="420" src="<%= @video.embed_link %>" frameborder="0" allowfullscreen></iframe>
-      <%= image_tag @video.videoupload.url(:thumb) %>
       <br>
 
        <br>
@@ -13,6 +12,7 @@
 
       <%= form_for [@video, @comment] do |f| %>
         <%= f.text_area :message %>
+        <%= f.file_field :videoupload %>
         <br>
         <%= f.submit "Post Comment" %>
       <% end %>
@@ -20,6 +20,7 @@
 
       <% @video.comments.each do |comment| %>
         <div class="comment">
+        <p><%= image_tag comment.videoupload.url(:thumb) %></p>
           <p><%= comment.message %></p>
           <p><strong>Author: </strong><%= comment.author.username %></p>
         </div>

@@ -1,6 +1,7 @@
 <%= bootstrap_form_for [@comment.video, @comment] do |f| %>
 
   <%= f.text_area :message %>
+  <%= f.file_field :videoupload %>
   <%= f.submit "Save" %>
 <% end %>
 

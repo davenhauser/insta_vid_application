@@ -2,7 +2,7 @@
 
 <article class= "video_show">
       <h4><%= link_to "Play in YouTube", @video.youtube_link %></h4>
-      <iframe width="680" height="420" src="<%= @video.embed_link %>" frameborder="0" allowfullscreen></iframe>
+      <iframe id="videoPlayer" width="680" height="420" src="<%= @video.embed_link %>" frameborder="0" allowfullscreen></iframe>
       <br>
       <span class= "video_span"><%= @video.tags %></span> &nbsp; | &nbsp;
       <span class= "video_span"><%= @video.filmed_when%></span> &nbsp; | &nbsp;
@@ -10,6 +10,7 @@
 
       <%= form_for [@video, @comment] do |f| %>
         <%= f.text_area :message %>
+        <br>
         <%= f.submit "Post Comment" %>
       <% end %>
 
@@ -20,7 +21,7 @@
           <p><strong>Author: </strong><%= comment.author.username %></p>
         </div>
         <% if comment.author == current_user %>
-          <%= link_to "Edit", edit_video_comment_path(@video, comment) %>
+          <%= link_to "Edit", video_comment_path(@video, comment) %>
         <% end %>
       <% end %>
 
@@ -35,4 +36,20 @@
 
 
 </main>
-
+<!--
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('videoPlayer', {
+      events: {
+        'onReady': function(evt) { console.log('video is ready to play', evt)},
+        'onStateChange': function(evt) {
+          console.log('state changed: ', evt);
+        }
+      }
+    });
+    console.dir(player);
+  }
+</script>
+ -->

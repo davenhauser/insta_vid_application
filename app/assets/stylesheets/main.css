@@ -1,12 +1,16 @@
+header {
+background-color: none;
+}
+
 body {
    font-size: 14px;
-background-color: PapayaWhip;
+background-color: MintCream;
  }
 
  h1,
  h3 {
   font-family: helvetica;
-   color: silver;
+   color: black;
    text-align: center;
  }
 
@@ -48,17 +52,21 @@ background-color: PapayaWhip;
   color: silver;
 }
 
-.nav .nav-pills .nav-justified {
-  text-align: right;
-  padding-right: 50px;
+.nav
+{
+  text-align: center;
+  padding-left: 30px;
+  color: black;
+  font-family: cool;
+  font-size: 20px;
 }
 
 
 .simple{
   text-align: center;
-  border: 0.5px solid gray;
+  border: 1.5px solid gray;
   margin-bottom: 30px;
-  background-color: Wheat;
+  background-color: white ;
   padding-bottom: 25px;
   border-radius: 5%
 }

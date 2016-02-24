@@ -8,6 +8,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
 <header>
@@ -16,7 +17,10 @@
  </header>
 
  <nav>
+  <%if current_user%>
   <%= link_to "Add Video", new_video_path %>
+  <%= link_to "Your Videos", user_path(current_user) %>
+  <% end %>
  </nav>
 
  <ul class = "nav nav-pills nav-justified">

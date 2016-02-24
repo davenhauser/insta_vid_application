@@ -15,12 +15,12 @@ end
 
 def create
   @video = Video.new(self.video_params)
-
-    if @video.save
-      redirect_to videos_path
-    else
-      render :new
-    end
+  @video.user = current_user
+  if @video.save
+    redirect_to videos_path
+  else
+    render :new
+  end
 end
 
 def edit

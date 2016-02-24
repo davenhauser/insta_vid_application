@@ -1,6 +1,6 @@
 <div class="form-container">
 
-<%= bootstrap_form_for @video do |f| %>
+<%= bootstrap_form_for @video, html: { multipart: true } do |f| %>
 
 
   <%= f.text_field :title %>
@@ -8,6 +8,7 @@
   <%= f.text_field :video_link, label: "Youtube ID" %>
   <%= f.date_select :filmed_when, order: [:month, :day, :year] %>
   <%= f.text_field :filmed_where %>
+  <%= f.file_field :videoupload %>
   <%= f.submit "Submit" %>
 <% end %>
 </div>

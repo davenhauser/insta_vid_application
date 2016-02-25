@@ -3,18 +3,25 @@ background-color: none;
 }
 
 body {
-font-family: reis;
+font-family: fabada;
 font-size: 20px;
 background-color: MintCream;
  }
 
- h1,
- h2{
+ h1{
   font-family: cool;
    color: black;
    text-align: center;
    font-style: bold;
+   font-size: 6rem;
  }
+
+h3{
+  font-family: fabada, Fallback, sans-serif;
+  font-spacing: .3rem;
+  font-size: 3rem;
+  text-align: center;
+}
 
 
   .video-embed {
@@ -23,7 +30,8 @@ background-color: MintCream;
  }
 
  nav {
-  font-family: reis;
+  font-size: 5px;
+  font-family: fabada;
   font-size: 25px;
    color: black;
    text-align: center;
@@ -59,7 +67,7 @@ background-color: MintCream;
   text-align: center;
   padding-left: 30px;
   color: black;
-  font-family: cool;
+  font-family: fabada;
   font-size: 20px;
 }
 
@@ -71,6 +79,18 @@ background-color: MintCream;
   padding-bottom: 25px;
   border-radius: 5%;
   background-color: none;
+  width: 75%;
+}
+
+.simple_user{
+  text-align: center;
+  border: 1.5px solid gray;
+  margin-bottom: 30px;
+  background-color: white ;
+  padding-bottom: 25px;
+  border-radius: 5%;
+  background-color: none;
+  width: 102%;
 }
 
 .simple_comment{
@@ -95,7 +115,7 @@ background-color: MintCream;
   padding-bottom: 25px;
   border-radius: 5%;
   background-color: none;
-  width: 75%;
+  width: 50%;
   max-width: 900px;
   min-width: 480px;
   margin: 0 auto;
@@ -111,6 +131,11 @@ background-color: MintCream;
 .comeon {
   margin: auto 350 20;
   border: 2px solid black;
+}
+
+.welcome {
+  font-family: fabada;
+  text-align: center;
 }
 /*.videos_simple {
   text-align: center;

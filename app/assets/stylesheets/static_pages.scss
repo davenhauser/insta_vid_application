@@ -17,8 +17,14 @@ h1 {
   src: font-url('reis.otf') format('opentype');
 }
 
-h3{
-  font-family: 'reis', Fallback, sans-serif;
-  font-spacing: .3rem;
-  font-size: 5rem;
+@font-face {
+  font-family: 'racing';
+  src: font-url('racing.ttf');
+  src: font-url('racing.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fabada';
+  src: font-url('fabada.ttf');
+  src: font-url('fabada.ttf') format('truetype');
 }

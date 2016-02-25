@@ -10,73 +10,73 @@
 Video.delete_all
 
 Video.create(
-  title: "Some Video",
+  title: "Cuteness",
   tags: "video1",
-  video_link: "GeZ_gq7DdsY",
+  video_link: "i65ZVBU2Tt6",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )
 
 Video.create(
-  title: "Some Video",
-  tags: "video1",
-  video_link: "onQLAEEeta8",
+  title: "Helicopter",
+  tags: "video2",
+  video_link: "Ml16lZVTTxe",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )
 
 Video.create(
-  title: "Some Video",
-  tags: "video1",
-  video_link: "XfzpYcwiUrA",
+  title: "Guy",
+  tags: "video3",
+  video_link: "irtP23ZdFFv",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )
 
 Video.create(
-  title: "Some Video",
-  tags: "video1",
-  video_link: "W3MaEAhXESs",
+  title: "Oprah",
+  tags: "video4",
+  video_link: "irETtX5bJrI",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )
 
 Video.create(
-  title: "Some Video",
-  tags: "video1",
-  video_link: "Y-8cvt3y-NM",
+  title: "Parrot",
+  tags: "video5",
+  video_link: "irW1O6tze2F",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )
 
 Video.create(
-  title: "Some Video",
-  tags: "video1",
-  video_link: "C_oACPWGvM4",
+  title: "Kirby",
+  tags: "video6",
+  video_link: "i110vWJKIKZ",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )
 
 Video.create(
-  title: "Some Video",
-  tags: "video1",
-  video_link: "F6j49uzPugA",
+  title: "Dance",
+  tags: "video6",
+  video_link: "ir3Y5YjhXj3",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )
 
 Video.create(
-  title: "Some Video",
-  tags: "video1",
-  video_link: "9HUV5a7MgS4",
+  title: "Guitar",
+  tags: "video7",
+  video_link: "irVFgLjJUXx",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )
 
 Video.create(
-  title: "Some Video",
-  tags: "video1",
-  video_link: "KMQQqa21ZVs",
+  title: "Dance 4 Life",
+  tags: "video8",
+  video_link: "ir3rZVe5qMY",
   filmed_when: Date.parse("15-02-2014"),
   filmed_where: "New York"
   )

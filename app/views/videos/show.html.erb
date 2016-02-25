@@ -1,7 +1,7 @@
  <main>
 
 <article class= "video_show">
-      <h4><%= link_to "Play in YouTube", @video.youtube_link %></h4>
+      <h4><%= link_to "Play in Vine", @video.vine_link %></h4>
       <iframe id="videoPlayer" width="680" height="420" src="<%= @video.embed_link %>" frameborder="0" allowfullscreen></iframe>
       <br>
 
@@ -59,10 +59,10 @@
 
 </main>
 <!--
-<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://www.Vine.com/iframe_api"></script>
 <script>
   var player;
-  function onYouTubeIframeAPIReady() {
+  function onVineIframeAPIReady() {
     player = new YT.Player('videoPlayer', {
       events: {
         'onReady': function(evt) { console.log('video is ready to play', evt)},

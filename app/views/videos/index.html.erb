@@ -24,7 +24,7 @@
       <% @videos.iterate_every(3) do |video| %>
       <div class="simple">
       <p><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></p>
-      <iframe width="340" height="210" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
+      <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
       <br>
 
       <span><%= video.tags %></span> &nbsp; | &nbsp;
@@ -46,7 +46,7 @@
       <% @videos.iterate_every(3,1) do |video| %>
       <div class="simple">
       <h4><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></h4>
-      <iframe width="340" height="210" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
+      <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
         <br>
       <span><%= video.tags %></span> &nbsp; | &nbsp;
       <span><%= video.filmed_when%></span>
@@ -66,7 +66,7 @@
       <% @videos.iterate_every(3,2) do |video| %>
       <div class="simple">
       <h4><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></h4>
-      <iframe width="340" height="210" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
+      <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
         <br>
       <span><%= video.tags %></span> &nbsp; | &nbsp;
       <span><%= video.filmed_when%></span>

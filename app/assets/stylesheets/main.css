@@ -8,7 +8,8 @@ font-size: 20px;
 background-color: MintCream;
  }
 
- h1{
+ h1,
+ h2{
   font-family: cool;
    color: black;
    text-align: center;

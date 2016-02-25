@@ -18,9 +18,17 @@
       <% @video.comments.each do |comment| %>
 
 <article class = "simple_comment">
+
+        <% if comment.videoupload.present? %>
+
         <p><strong>Comment by: </strong><%= comment.author.username %></p>
         <p><%= image_tag comment.videoupload.url(:medium) %></p>
+        <p><%= comment.message %></p>
+
+          <% else %>
+          <p><strong>Comment by: </strong><%= comment.author.username %></p>
           <p><%= comment.message %></p>
+          <% end %>
 
         <% if comment.author == current_user %>
           <%= link_to "Edit", edit_video_comment_path(@video, comment) %> &nbsp; | &nbsp;

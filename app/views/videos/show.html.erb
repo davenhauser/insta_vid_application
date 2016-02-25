@@ -1,14 +1,22 @@
  <main>
 
 <article class= "video_show">
-      <h4><%= link_to "Play in Vine", @video.vine_link %></h4>
+      <h4><%= link_to @video.title, @video.vine_link %></h4>
+      <p><strong>Posted by: </strong><%= @video.user.username %></p>
       <iframe id="videoPlayer" width="600" height="600" src="<%= @video.embed_link %>" frameborder="0" allowfullscreen></iframe>
       <br>
 
        <br>
-      <span class= "video_span"><%= @video.tags %></span> &nbsp; | &nbsp;
-      <span class= "video_span"><%= @video.filmed_when%></span> &nbsp; | &nbsp;
+      <span class= "video_span"><%= @video.tags %></span> |
+      <span class= "video_span"><%= @video.filmed_when%></span> |
       <span class= "video_span"><%= @video.filmed_where%></span>
+
+        <br>
+      <div class = "controls">
+     <span><%= link_to "Edit", edit_video_path(@video) %> </span> &nbsp; | &nbsp;
+     <span><%= link_to "Remove", video_path(@video.id), method: "DELETE",
+     data: {confirm: "Are you sure you want to delete this video?"} %> </span>
+   </div>
 
   </article>
 
@@ -48,12 +56,7 @@
     </article>
 
 
-   <div class = "controls">
-     <span><%= link_to "Edit", edit_video_path(@video) %> </span> &nbsp; | &nbsp;
-     <span><%= link_to "Remove", video_path(@video.id), method: "DELETE",
-     data: {confirm: "Are you sure you want to delete this video?"} %> </span> &nbsp; | &nbsp;
-     <span><%=link_to "Comment this video", video_path(@video)%></span>
-   </div>
+
 
 
 

@@ -5,17 +5,18 @@
 <div class="col-md-3">
       <% @videos.iterate_every(4) do |video| %>
       <div class="simple_user">
-      <p><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></p>
+      <p><%= link_to video.title, video %>
+       <%= "(#{video.filmed_where})" %></p>
       <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
         <br>
-      <span><%= video.tags %></span> &nbsp; | &nbsp;
-      <span><%= video.filmed_when%></span>
+      <span><%= video.tags %></span>&nbsp;
+      <span>(<%= video.filmed_when%>)</span>
   <div class = "controls">
     <% if current_user %>
-     <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;
-     <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
-     data: {confirm: "Are you sure you want to delete this video?"} %> </span> &nbsp; | &nbsp;
-     <span><%=link_to "Comment this video", video_path(video)%></span>
+    <span><%= link_to "Edit", edit_video_path(video) %> </span>
+     | <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
+     data: {confirm: "Are you sure you want to delete this video?"} %> </span>|
+     <span><%=link_to "Comment", video_path(video)%></span>
     <% end %>
    </div>
    </div>
@@ -28,14 +29,14 @@
       <h4><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></h4>
       <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
         <br>
-      <span><%= video.tags %></span> &nbsp; | &nbsp;
-      <span><%= video.filmed_when%></span>
+      <span><%= video.tags %></span>&nbsp;
+      <span>(<%= video.filmed_when%>)</span>
   <div class = "controls">
     <% if current_user %>
-     <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;
-     <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
-     data: {confirm: "Are you sure you want to delete this video?"} %> </span> &nbsp; | &nbsp;
-     <span><%=link_to "Comment this video", video_path(video)%></span>
+     <span><%= link_to "Edit", edit_video_path(video) %> </span>
+    | <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
+     data: {confirm: "Are you sure you want to delete this video?"} %> </span>|
+     <span><%=link_to "Comment", video_path(video)%></span>
     <% end %>
    </div>
    </div>
@@ -48,14 +49,14 @@
       <h4><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></h4>
       <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
         <br>
-      <span><%= video.tags %></span> &nbsp; | &nbsp;
-      <span><%= video.filmed_when%></span>
+      <span><%= video.tags %></span>&nbsp;
+      <span>(<%= video.filmed_when%>)</span>
   <div class = "controls">
     <% if current_user %>
-     <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;
-     <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
-     data: {confirm: "Are you sure you want to delete this video?"} %> </span> &nbsp; | &nbsp;
-     <span><%=link_to "Comment this video", video_path(video)%></span>
+     <span><%= link_to "Edit", edit_video_path(video) %> </span>
+    | <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
+     data: {confirm: "Are you sure you want to delete this video?"} %> </span>|
+     <span><%=link_to "Comment", video_path(video)%></span>
     <% end %>
    </div>
    </div>
@@ -68,14 +69,14 @@
       <h4><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></h4>
       <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
         <br>
-      <span><%= video.tags %></span> &nbsp; | &nbsp;
-      <span><%= video.filmed_when%></span>
+      <span><%= video.tags %></span>&nbsp;
+      <span>(<%= video.filmed_when%>)</span>
   <div class = "controls">
     <% if current_user %>
-     <span><%= link_to "Edit", edit_video_path(video) %> </span> &nbsp; | &nbsp;
-     <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
-     data: {confirm: "Are you sure you want to delete this video?"} %> </span> &nbsp; | &nbsp;
-     <span><%=link_to "Comment this video", video_path(video)%></span>
+     <span><%= link_to "Edit", edit_video_path(video) %> </span>
+   | <span><%= link_to "Remove", video_path(video.id), method: "DELETE",
+     data: {confirm: "Are you sure you want to delete this video?"} %> </span>|
+     <span><%=link_to "Comment", video_path(video)%></span>
     <% end %>
    </div>
    </div>

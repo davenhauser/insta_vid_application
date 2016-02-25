@@ -62,16 +62,55 @@ background-color: MintCream;
   font-size: 20px;
 }
 
-
 .simple{
   text-align: center;
   border: 1.5px solid gray;
   margin-bottom: 30px;
   background-color: white ;
   padding-bottom: 25px;
-  border-radius: 5%
+  border-radius: 5%;
+  background-color: none;
 }
 
+.simple_comment{
+  text-align: center;
+  border-bottom: 2px solid grey;
+  margin-bottom: 30px;
+  background-color: MintCream ;
+  padding-bottom: 25px;
+  background-color: none;
+  width: 50%;
+  max-width: 900px;
+  min-width: 480px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.video_show{
+  text-align: center;
+  border: 1.5px solid gray;
+  margin-bottom: 30px;
+  background-color: white ;
+  padding-bottom: 25px;
+  border-radius: 5%;
+  background-color: none;
+  width: 75%;
+  max-width: 900px;
+  min-width: 480px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+.post_comment {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.comeon {
+  margin: auto 350 20;
+  border: 2px solid black;
+}
 /*.videos_simple {
   text-align: center;
   border: 1.5px solid gray;

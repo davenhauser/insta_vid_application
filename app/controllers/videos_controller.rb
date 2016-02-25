@@ -43,6 +43,9 @@ def update
   flash[:message] = "'#{@video.title}' removed!"
   redirect_to videos_path
  end
+
+ private
+
   def video_params
     params.require(:video).permit(:title, :tags, :video_link, :filmed_when, :filmed_where)
   end

@@ -1,8 +1,22 @@
 <h1>Login</h1>
+
+<ul class = "nav nav-pills nav-justified">
+  <li>
+  <%= link_to 'Home', videos_path %>
+  </li>
+  <li>
+  <%= link_to 'Sign Up', new_user_path %>
+  </li>
+  </ul>
+
 <p id="alert"><%= alert %></p>
+
+<div class="form-container">
+
 <%= bootstrap_form_tag url: sessions_path do |f| %>
 
 <%= f.text_field :email %>
 <%= f.password_field :password %>
 <%= f.submit"Log in" %>
 <% end %>
+</div>

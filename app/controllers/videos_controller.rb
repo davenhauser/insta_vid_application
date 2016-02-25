@@ -7,10 +7,14 @@ end
 def show
   @video = Video.find(params[:id])
   @comment = Comment.new
-end
+  end
 
 def new
+  if current_user.present?
   @video = Video.new
+  else
+    redirect_to videos_path
+  end
 end
 
 def create
@@ -24,7 +28,11 @@ def create
 end
 
 def edit
+
   @video = Video.find(params[:id])
+  if  @video.user != current_user
+    redirect_to videos_path
+  end
 end
 
 def update

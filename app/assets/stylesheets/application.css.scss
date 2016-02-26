@@ -12,7 +12,9 @@
  *
  *= require rails_bootstrap_forms
  *= require_self
- *= require_tree .
+ *= require static_pages
+ *= require homepages
+ *= require main
  */
 
 @import "bootstrap-sprockets";

@@ -28,6 +28,12 @@ In order to build and deploy this web-application I used the following technolog
 
 ##Design
 
+###Wireframes 
+![Wireframes](https://i.imgur.com/YcFn8fq.png)
+###ERDs
+![ERDs](https://i.imgur.com/ny4mH9G.png)
+
+
 I wanted this web-application to have a simple but clean look, similar to the designs of [Vine](https://vine.co/) or [Instagram](https://www.instagram.com/). In order to ensure a pleasant user experience, on the main page there are 3 columns with all the uploaded vines, including a title and other suplementary infromation. Furthermore any signed in user can access an overview of all the vines they have posted (in this case they are displayed in 4 colums), as well as display a single vine.    
 Only two fonts were used for this web-application; _cool_ for the logo and _fabada_ for the rest of the text. Most of the formatting is done with help of bootstrap.   
 The home page shows a vine-compilation in full screen and autoplay mode. 

@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
 
 gem 'dotenv-rails', :groups => [:development, :test]
 
@@ -57,5 +56,9 @@ group :development do
 group :production do
   gem 'rails_12factor'
   gem 'thin'
+end
+
+ruby '2.2.3'
+
 end
 

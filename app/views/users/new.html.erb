@@ -3,19 +3,16 @@
 <ul class = "nav nav-pills nav-justified">
   <li><span class="glyphicon glyphicon-home"></span><%= link_to 'Home', videos_path %></li>
   <li> <span class="glyphicon glyphicon-ok-circle"></span><%= link_to 'Log in', login_path %></li>
-  </ul>
-
-
+</ul>
 
 <div class="form-container">
 
 <%= bootstrap_form_for @user do |f| %>
-
-<%= f.text_field :username %>
-<%= f.text_field :email %>
-<%= f.password_field :password%>
-<%= f.password_field :password_confirmation%>
-<%=f.submit "Submit"%>
+  <%= f.text_field :username %>
+  <%= f.text_field :email %>
+  <%= f.password_field :password%>
+  <%= f.password_field :password_confirmation%>
+  <%=f.submit "Submit"%>
 <% end %>
 </div>
 

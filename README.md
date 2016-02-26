@@ -3,7 +3,7 @@
 InstaVid is a web-application that works together with the popular application [Vine](https://vine.co/). 
 In order to have full access to all the functionalities on InstaVid, any user needs to create an account and be signed in. This will allow them to upload vines (short videos of max. 6 seconds), see what other users have uploaded and comment on any Vine they like. Users can chose between looking at an overview of all uploaded Vines or display a single Vine at a time.   
 
-                                    Overview
+                                
 
 ![Overview](https://i.imgur.com/jto8jHI.jpg) 
  

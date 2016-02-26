@@ -1,22 +1,19 @@
 class Video < ActiveRecord::Base
 
+  belongs_to :user
+  has_many :comments
 
-
-   belongs_to :user
-   has_many :comments
-
-
-   validates :video_link, uniqueness: true, presence: true, length: { is: 11 }
-   validates :title, presence: true, length: { maximum: 30}
-   validates :filmed_where, presence: true, length: { maximum: 24}
+  validates :video_link, uniqueness: true, presence: true, length: { is: 11 }
+  validates :title, presence: true, length: { maximum: 30}
+  validates :filmed_where, presence: true, length: { maximum: 24}
 
   def vine_link
     "https://vine.co/v/#{self.video_link}"
   end
 
-   def embed_link
-     "https://vine.co/v/#{self.video_link}/embed/simple"
-   end
+  def embed_link
+    "https://vine.co/v/#{self.video_link}/embed/simple"
+  end
 
   def self.iterate_every(step, starting=0)
    every = all

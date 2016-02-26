@@ -1,8 +1,5 @@
 <div class="form-container">
-
 <%= bootstrap_form_for @video, html: { multipart: true } do |f| %>
-
-
   <%= f.text_field :title %>
   <%= f.text_field :tags, label: "#Tags" %>
   <%= f.text_field :video_link, label: "Vine ID" %>

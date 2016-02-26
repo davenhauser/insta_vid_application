@@ -4,17 +4,17 @@ background-image: url("https://vine.co/v/ibAU6OH2I0K/embed/simple");
 }
 
 body {
-font-family: fabada;
-font-size: 20px;
-background-color: MintCream;
- }
+  font-family: fabada;
+  font-size: 20px;
+  background-color: MintCream;
+}
 
- h1{
+h1{
   font-family: cool;
-   color: black;
-   text-align: center;
-   font-style: bold;
-   font-size: 6rem;
+  color: black;
+  text-align: center;
+  font-style: bold;
+  font-size: 6rem;
  }
 
 h3{
@@ -25,7 +25,7 @@ h3{
 }
 
 
-  .video-embed {
+.video-embed {
    display: block;
    margin: 0 auto;
  }
@@ -34,15 +34,15 @@ h3{
   font-size: 5px;
   font-family: fabada;
   font-size: 25px;
-   color: black;
-   text-align: center;
+  color: black;
+  text-align: center;
  }
 
- .field_with_errors {
+.field_with_errors {
    display: inline;
  }
 
- .field_with_errors input {
+.field_with_errors input {
    border: 2px solid red;
  }
 
@@ -63,8 +63,7 @@ h3{
   color: silver;
 }
 
-.nav
-{
+.nav{
   text-align: center;
   padding-left: 30px;
   color: black;

@@ -35,7 +35,7 @@
   <div class = "controls">
 
   <% if current_user %>
-    <%=link_to "Comment", video_path(video)%>
+    <%=link_to "Comment", video_path(video) + "#comment_message"%>
   <%end%>
     <% if video.user == current_user %>
      | <span><%= link_to "Edit", edit_video_path(video) %> </span>|
@@ -59,7 +59,7 @@
       <span>(<%= video.filmed_when%>)</span>
   <div class = "controls">
   <% if current_user %>
-    <%=link_to "Comment", video_path(video)%>
+    <%=link_to "Comment", video_path(video) + "#comment_message" %>
   <%end%>
       <% if video.user == current_user %>
      | <span><%= link_to "Edit", edit_video_path(video) %> </span>|
@@ -83,7 +83,7 @@
       <span>(<%= video.filmed_when%>)</span>
   <div class = "controls">
   <% if current_user %>
-    <%=link_to "Comment", video_path(video)%>
+    <%=link_to "Comment", video_path(video) + "#comment_message"%>
   <%end%>
       <% if video.user == current_user %>
       | <span><%= link_to "Edit", edit_video_path(video) %> </span>|

@@ -139,7 +139,11 @@ h3{
   text-align: center;
 }
 
-
+.homepage_text {
+  font-family: cool;
+  font-size: 200px;
+  text-align: center;
+}
 /*.videos_simple {
   text-align: center;
   border: 1.5px solid gray;

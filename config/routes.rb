@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "videos#index"
+  root "homepages#home"
 
 
   resources :users, only: [:new, :create, :show]

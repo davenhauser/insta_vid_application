@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       flash[:alert] = "You have successfully signed up!"
-      redirect_to root_path
+      redirect_to videos_path
     else
       render :new
     end

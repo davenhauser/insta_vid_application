@@ -1,5 +1,23 @@
+h1 {
+  font-family: 'cool', Fallback, sans-serif;
+  font-spacing: .3rem;
+  font-size: 5rem;
+}
+
 header {
   background-image: url("https://vine.co/v/ibAU6OH2I0K/embed/simple");
+}
+
+.homepage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
 }
 
 body {
@@ -8,7 +26,7 @@ body {
   background-color: MintCream;
 }
 
-h1{
+h1 {
   font-family: cool;
   color: black;
   text-align: center;

@@ -12,12 +12,32 @@
  *
  *= require rails_bootstrap_forms
  *= require_self
- *= require static_pages
- *= require homepages
  *= require main
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@font-face {
+  font-family: 'cool';
+  src: font-url('cool.otf');
+  src: font-url('cool.otf') format('opentype');
+}
 
+@font-face {
+  font-family: 'reis';
+  src: font-url('reis.otf');
+  src: font-url('reis.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'racing';
+  src: font-url('racing.ttf');
+  src: font-url('racing.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fabada';
+  src: font-url('fabada.ttf');
+  src: font-url('fabada.ttf') format('truetype');
+}

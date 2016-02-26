@@ -13,31 +13,30 @@
 
 <body>
 
-<header>
-  <h1 id="header_id">InstaVid</h1>
- </header>
+<% if ! is_on_homepage %>
+  <header>
+    <h1 id="header_id">InstaVid</h1>
+  </header>
 
-<nav>
-  <%if current_user%>
-  <%= link_to "Add Video", new_video_path %> &nbsp;|&nbsp;
-  <%= link_to "Your Videos", user_path(current_user) %>
+  <%if current_user %>
+    <nav>
+      <%= link_to "Add Video", new_video_path %> &nbsp;|&nbsp;
+      <%= link_to "Your Videos", user_path(current_user) %>
+    </nav>
+    <ul class = "nav nav-pills nav-justified">
+      <li>
+
+        <span class="glyphicon glyphicon-home"></span>
+        <%=link_to "Home", videos_path%>
+      </li>
+      <li>
+        <span class="glyphicon glyphicon-remove-sign"></span>
+        <%= link_to 'Log Out', session_path('dummy'), method: :delete %>
+      </li>
+    </ul>
   <% end %>
-</nav>
-
-<ul class = "nav nav-pills nav-justified">
-
-<li>
-  <% if current_user %>
-  <span class="glyphicon glyphicon-home"></span><%=link_to "Home", videos_path%>
-</li>
-
-<li>
-  <span class="glyphicon glyphicon-remove-sign"></span><%= link_to 'Log Out', session_path('dummy'), method: :delete %>
-</li>
-
 <% end %>
 
-</ul>
 
 
 <%= yield %>

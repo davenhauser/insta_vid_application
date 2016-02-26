@@ -6,9 +6,9 @@ class ApplicationController < ActionController::Base
 
 
   private
+    # Make the current_user method available to views, not just controllers!
+    helper_method :current_user, :is_on_homepage
 
-     # Make the current_user method available to views, not just controllers!
-    helper_method :current_user
     def current_user
       @current_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
     end
@@ -20,4 +20,8 @@ class ApplicationController < ActionController::Base
     #def current_comment
      # @current_comment ||= User.find(session[:user_id]) if session[:user_id]
     #end
+
+    def is_on_homepage
+      params[:controller] == "homepages" && params[:action] == "home"
+    end
 end

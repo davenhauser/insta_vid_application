@@ -7,8 +7,8 @@ class Video < ActiveRecord::Base
 
 
    validates :video_link, uniqueness: true, presence: true, length: { is: 11 }
-   validates :title, presence: true
-   validates :filmed_where, presence: true
+   validates :title, presence: true, length: { maximum: 30}
+   validates :filmed_where, presence: true, length: { maximum: 24}
 
   def vine_link
     "https://vine.co/v/#{self.video_link}"

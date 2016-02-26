@@ -1,5 +1,4 @@
-
- <ul class = "nav nav-pills nav-justified">
+  <ul class = "nav nav-pills nav-justified">
 
   <% if current_user %>
   <p class = "welcome">
@@ -24,7 +23,9 @@
       <% @videos.iterate_every(3) do |video| %>
       <div class="simple">
 
-      <p><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></p>
+      <h4><%= link_to video.title, video %>
+      <br>
+       <%= "(#{video.filmed_where})" %></h4>
       <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
       <br>
 
@@ -49,7 +50,9 @@
 <div class="col-sm-6 col-md-4 video-container">
       <% @videos.iterate_every(3,1) do |video| %>
       <div class="simple">
-      <h4><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></h4>
+      <h4><%= link_to video.title, video %>
+        <br>
+      <%= "(#{video.filmed_where})" %></h4>
       <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
         <br>
     <span><%= video.tags %></span> &nbsp;
@@ -71,7 +74,9 @@
 <div class="col-sm-6 col-md-4 video-container">
       <% @videos.iterate_every(3,2) do |video| %>
       <div class="simple">
-      <h4><%= link_to video.title, video %> <%= "(#{video.filmed_where})" %></h4>
+      <h4><%= link_to video.title, video %>
+        <br>
+      <%= "(#{video.filmed_where})" %></h4>
       <iframe width="290" height="350" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
         <br>
      <span><%= video.tags %></span> &nbsp;

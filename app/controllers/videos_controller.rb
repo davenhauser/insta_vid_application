@@ -38,7 +38,7 @@ end
 def update
   @video = Video.find(params[:id])
   if @video.update(self.video_params)
-    redirect_to  videos_path
+    redirect_to  video_path
   else
     render :edit
   end

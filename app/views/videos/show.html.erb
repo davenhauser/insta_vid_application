@@ -8,11 +8,13 @@
     <span class= "video_span"><%= @video.filmed_when%></span> |
     <span class= "video_span"><%= @video.filmed_where%></span>
     <br>
+    <% if @video.user == current_user%>
     <div class = "controls">
       <span><%= link_to "Edit", edit_video_path(@video) %> </span> &nbsp; | &nbsp;
       <span><%= link_to "Remove", video_path(@video.id), method: "DELETE",
       data: {confirm: "Are you sure you want to delete this video?"} %> </span>
     </div>
+    <%end%>
   </article>
 
 <% @video.comments.each do |comment| %>
